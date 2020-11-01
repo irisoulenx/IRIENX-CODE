@@ -4,7 +4,7 @@
 &ensp;
 ![license](https://img.shields.io/github/license/irisoulenx/irienx-code?color=lightgrey&style=flat-square)
 &ensp;
-![version](https://img.shields.io/github/downloads/irisoulenx/irienx-code/total?style=flat-square)
+![download](https://img.shields.io/github/downloads/irisoulenx/irienx-code/total?style=flat-square)
 
 [![twitter](https://img.shields.io/badge/Twitter-irisoulenx-blue.svg?style=social&logo=twitter)](https://twitter.com/irisoulenx)
 &ensp;
