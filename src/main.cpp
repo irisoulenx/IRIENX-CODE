@@ -1,4 +1,6 @@
-#include<iostream>
+#include "pr.h"
 int main(){
-	std::cout<<"Welcom"<<std::endl;
+	int a=100;
+	std::cout<<"数字："<<a<<std::endl;
+	return 0;
 }
