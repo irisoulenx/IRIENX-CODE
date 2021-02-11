@@ -10,3 +10,4 @@
 [![bilibili](https://img.shields.io/badge/Bilibili-irisoulenx-pink.svg?style=social&logo=bilibili)](https://space.bilibili.com/285779859)
 
 
+Pyqt+Rust+CPP
