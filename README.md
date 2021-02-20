@@ -1,6 +1,6 @@
-<center>![renard-code](https://github.com/irisoulenx/lentille-code/blob/main/res/logo.png)</center>
+<center>![renard-code](https://github.com/irisoulenx/renard-code/blob/main/res/logo.jpg)</center>
 
-# <center>Renard Code</center>
+# <p align="center">Renard Code</p>
 
 ![License](https://img.shields.io/github/license/irisoulenx/irienx-code?color=lightgrey&style=flat-square)
 &ensp;
