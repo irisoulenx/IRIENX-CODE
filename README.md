@@ -1,6 +1,5 @@
-![](res/logo.jpg)
+# ![](res/logo.jpg) Renard Code
 
-# <p align="center">Renard Code</p>
 
 ![License](https://img.shields.io/github/license/irisoulenx/irienx-code?color=lightgrey&style=flat-square)
 &ensp;
