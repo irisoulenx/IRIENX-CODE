@@ -1,4 +1,4 @@
-<p align="center"> ![renard-code](https://github.com/irisoulenx/renard-code/blob/main/res/logo.jpg) </p>
+<p align="center"> ![renard-code](/res/logo.jpg) </p>
 
 # <p align="center">Renard Code</p>
 
