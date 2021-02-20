@@ -1,4 +1,4 @@
-<p align="center"> ![](res/logo.jpg) </p>
+![](res/logo.jpg)
 
 # <p align="center">Renard Code</p>
 
