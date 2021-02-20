@@ -1,4 +1,4 @@
-<center>!(res/logo.png)</center>
+<center>!(https://github.com/irisoulenx/lentille-code/blob/main/res/logo.png)</center>
 
 # <center>Renard Code</center>
 
