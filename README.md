@@ -17,8 +17,3 @@ Renard-Code is using  latest stable **Rust** language and some lib written by **
 $ cargo build
 ```
 
----
-
-### My system environment:
-* OS : Arch Linux x86_64 
-*  Kernel : Latest Mainline
