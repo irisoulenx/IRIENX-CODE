@@ -1,12 +1,12 @@
 # ![](res/logo.jpg) Riley Code
 
-Riley-Code is a code editor backend.
+An open source and free lightweight code editor. 
 
 ---
 
 ### How to build
 
-Riley-Code is using  latest stable **Rust** language and some lib written by **C++**. And you can build this project at the root directory of it.
+Riley Code is using  latest stable **Rust** language and some lib written by **C++**. And you can build this project at the root directory of it.
 
 ```
 $ cargo build
