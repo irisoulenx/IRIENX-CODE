@@ -1,4 +1,4 @@
-# ![](res/logo.jpg) Rei Code
+# ![](res/logo.jpg) Lain Code
 
 An open source and free lightweight code editor. 
 
@@ -6,14 +6,27 @@ An open source and free lightweight code editor.
 
 ### How to build
 
-Rei Code is using  latest stable **Rust** language and some lib written by **C++**. And you can build this project at the root directory of it.
+Lain Code is using **Rust** language and gui library **ImGui-rs**(Rust bindings for **Dear ImGui**) . And you can build this project at the root directory of it.
 
 ```
+$ cd lain-code
 $ cargo build
 ```
 
 ---
 
+### How to contribute
+- Change or add something
+- Make sure you're using the latest stable Rust
+- Run rustfmt to guarantee code style conformance
+···
+$ rustup component add rustfmt
+$ cargo fmt
+···
+- Open a pull request in Github
+
+---
+
 ### License
 
-![License](https://img.shields.io/github/license/alchepic/rei-code?color=green&style=flat-square)
+![License](https://img.shields.io/github/license/alchepic/Lain-code?color=green&style=flat-square)
