@@ -1,9 +1,27 @@
 [package]
-name = "lentille-code"
+name = "lain-code"
 version = "0.1.0"
-authors = ["irisoulenx <howiewoo@outlook.com>"]
 edition = "2018"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+license = "MIT"
 
 [dependencies]
+
+[features]
+opengl = ["imgui-gfx-renderer/opengl"]
+# FIXME
+# directx = ["imgui-gfx-renderer/directx"]
+default = ["opengl"]
+
+[dev-dependencies]
+gfx = "0.18"
+gfx_device_gl = "0.16"
+glutin = "0.26"
+image = "0.23"
+imgui = { path = "lib/imgui" }
+imgui-gfx-renderer = { path = "lib/imgui-gfx-renderer" }
+imgui-winit-support = { path = "lib/imgui-winit-support" }
+old_school_gfx_glutin_ext = "0.26"
+
+[target.'cfg(windows)'.dev-dependencies]
+gfx_device_dx11 = "0.8"
+gfx_window_dxgi = "0.19"
