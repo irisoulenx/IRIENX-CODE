@@ -1,15 +1,15 @@
 # ![](res/logo.jpg) Lain Code
 
-An open source and free lightweight code editor. 
+An open source and free lightweight code editor.
 
 ---
 
 ### How to build
 
-Lain Code is using **Rust** language and gui library **ImGui-rs**(Rust bindings for **Dear ImGui**) . And you can build this project at the root directory of it.
+Lain Code's core is using **Rust** language and you can build this at the root directory of it.
 
 ```
-$ cd lain-code
+$ cd lain-core
 $ cargo build
 ```
 
