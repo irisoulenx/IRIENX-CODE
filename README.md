@@ -12,7 +12,7 @@ An open source and free lightweight code editor.
 
 ### How to build
 
-Lain code's interface uses **DearPyGui**, its core uses rust, and it supports plug-ins written in Python.
+Lain code's interface uses **DearPyGui**, its core uses **Rust**, and it supports plug-ins written in **Python**.
 
 Make sure all required tools are installed.
 
@@ -22,7 +22,12 @@ Make sure all required tools are installed.
 |pip|latest|
 |rust|latest stable|
 |cargo|latest stable|
-|
+
+Install **DearPyGui**
+
+```
+$ pip install dearpygui
+```
 
 You can compile each module step by step:
 ```
