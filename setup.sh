@@ -6,6 +6,14 @@ name="lain-core"
 system_target="Linux"
 system_type=`uname`
 
+echo "
+    _/                  _/                  _/_/_/                  _/
+   _/          _/_/_/      _/_/_/        _/          _/_/      _/_/_/    _/_/
+  _/        _/    _/  _/  _/    _/      _/        _/    _/  _/    _/  _/_/_/_/
+ _/        _/    _/  _/  _/    _/      _/        _/    _/  _/    _/  _/
+_/_/_/_/    _/_/_/  _/  _/    _/        _/_/_/    _/_/      _/_/_/    _/_/_/
+"
+
 echo "Check the compilation environment."
 
 check_python=`python --version`
