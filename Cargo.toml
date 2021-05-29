@@ -8,11 +8,20 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-lib-core = { path = "lib-core",version = "0.1.0"}
-lib-utils = { path = "lib-utils",version = "0.1.0"}
+# Custom module
+kern = { path = "./src/kern",version = "0.1.0" }
+lsp = { path = "./src/lsp",version = "0.1.0" }
+plugins = { path = "./plugins",version = "0.1.0" }
+utils = { path = "./utils",version = "0.1.0" }
+
+[[bin]]
+name="laco"
+path="./src/main.rs" 
 
 [workspace]
 members = [
-    "lib-core",
-    "lib-utils"
+    "src/kern",
+    "src/lsp",
+    "plugins",
+    "utils"
 ]

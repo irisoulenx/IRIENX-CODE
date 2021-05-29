@@ -1,8 +1,11 @@
-use lib_core::TestCore;
-use lib_utils::lib_utils;
-
+use plugins::test;
+use utils::utils;
+use kern::kern;
+use lsp::lsp;
 fn main() {
-    TestCore::success();
-    lib_utils::extend_works();
+    test::PluginsCheck::success();
+    utils::utils_works();
+    kern::kern_works();
+    lsp::lsp_works();
     println!("Hello, world!");
 }
