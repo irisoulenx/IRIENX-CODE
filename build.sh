@@ -10,12 +10,6 @@ system_type=`uname -o`
 system_bit=`uname -i`
 check_cargo=`cargo --version`
 check_rustc=`rustc --version`
-check_clang=`clang --version`
-check_clang_ver=`clang --version | grep -Eo "[0-9]+\.[0-9]+\.[0-9]"`
-check_make=`make --version`
-check_make_ver=`make --version | grep -Eo "[0-9]+\.[0-9]"`
-check_cmake=`cmake --version`
-check_cmake_ver=`cmake --version | grep -Eo "[0-9]+\.[0-9]+\.[0-9]"`
 
 echo -e "\033[32m\033[42m-------------------------------------------------------------------------------\033[0m
 
@@ -51,7 +45,7 @@ fi
 
 # if rust toolchain is not installed,here will work.
 if [ ${code} == "1" ];then
-    read -r -p "Do you want to install rustup? [Y\N] default [N]: " yesorno
+    read -r -p "Do you want to install rustup? [Y/N] default [N]: " yesorno
     case $yesorno in
         [yY][eE][sS]|[yY])
 	    	echo "  Install rustup from sh.rustup.rs..."
@@ -60,47 +54,7 @@ if [ ${code} == "1" ];then
 
         [nN][oO]|[nN]|*)
 		    echo "  Or you have a better way,see you later."
-            exit 1
-       	    ;;
-    esac
-fi
-
-# check c toolchain.
-code=0
-if [ ${check_clang%% *} == "clang" ];then
-    echo -e "   [\033[32m SUCCESS \033[0m] clang check:\033[36m clang ${check_clang_ver}\033[0m"
-else
-    echo -e "   [\033[31m FAILED  \033[0m] clang is not detected in the system."
-    code=1
-fi
-
-if [ ${check_cmake%% *} == "cmake" ];then
-    echo -e "   [\033[32m SUCCESS \033[0m] cmake check:\033[36m cmake ${check_cmake_ver}\033[0m"
-else
-    echo -e "   [\033[31m FAILED  \033[0m] cmake is not detected in the system."
-    code=2
-fi
-
-if [ ${check_make%% *} == "GNU" ];then
-    echo -e "   [\033[32m SUCCESS \033[0m] make  check:\033[36m make ${check_make_ver}\033[0m"
-else
-    echo -e "   [\033[31m FAILED  \033[0m] make is not detected in the system."
-    code=3
-fi
-
-# if c toolchain is not installed,here will work.
-if [ ${code} == "1" ];then
-    read -r -p "Do you want to install clang? [Y\N] default [N]: " yesorno
-    case $yesorno in
-        [yY][eE][sS]|[yY])
-	    	echo "  Install clang from official repo..."
-            case 
-            esac
-		    ;;
-
-        [nN][oO]|[nN]|*)
-		    echo "  Or you have a better way,see you later."
-            exit 1
+            exit 0
        	    ;;
     esac
 fi
@@ -113,16 +67,63 @@ if [ ${system_type}=~${system_target} ];then
     echo -e "   [\033[32m SUCCESS \033[0m] operating system check:\033[36m ${system_type}\033[0m"
 else
     echo -e "   [\033[33m WARNING \033[0m] the script is only for Linux, it is not clear whether it can be run on other systems."
+    exit 1
 fi
 
 if [ ${system_bit} == "x86_64" ];then
     echo -e "   [\033[32m SUCCESS \033[0m] cpu architecture check:\033[36m ${system_bit}\033[0m"
 else
-    echo -e "   [\033[33m WARNING \033[0m] "
+    echo -e "   [\033[33m WARNING \033[0m] I am not sure if it can run on a 32bit machine."
     exit 1
 fi
-echo ""
-echo "Start compiling lain-core."
 
-# to be continued
+echo ""
+
+# compiling lain-code
+echo "Start compiling lain-code..."
+
+echo ""
+
+    read -r -p "In what way do you want to build this project? [(D)ebug)/(R)elease/(C)ancel]: " status
+    case $status in
+        [dD])
+	    	echo "  Compile the debug version..."
+            cargo build
+            read -r -p "Do you want to run this project now? [Y/N] default [N]: " runDebug
+            case $runDebug in
+                [yY][eE][sS]|[yY])
+                    echo "  Start lain-code (debug)..."
+                    cargo run
+                    ;;
+                [nN][oO]|[nN]|*)
+                    echo "  Maybe later..."
+                    exit 0
+                    ;;
+            esac
+		    ;;
+        [rR])
+	    	echo "  Compile the release version..."
+            cargo build --release
+            read -r -p "Do you want to run this project now? [Y/N] default [N]: " runRelease
+            case $runRelease in
+                [yY][eE][sS]|[yY])
+                    echo "  Start lain-code (release)..."
+                    cargo run --release
+                    ;;
+                [nN][oO]|[nN]|*)
+                    echo "  Maybe later..."
+                    exit 0
+                    ;;
+            esac
+		    ;;
+        *)
+		    echo "  Or you have a better way,see you later."
+            exit 0
+       	    ;;
+    esac
+
+echo ""
+
+echo -e "\033[36mIt looks like everything is over smoothly, goodbye! \033[0m"
+
 exit 0
