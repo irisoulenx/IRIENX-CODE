@@ -1,0 +1,30 @@
+# Name: lain-code configuration
+# Version: v0.1.0
+# Author: Siegfried Wu
+
+# Import external configuration files
+import:
+  - /path/to/theme-lain-light.yml
+  - /path/to/hotkey-lain.yml
+
+# Font configuration
+font:
+  family: FiraCode
+  style: SemiBold
+  size: 10
+
+# Code highlight configuration
+highlight:
+  status: on
+
+# Cursor style configuration
+# Values for `style`:
+#     - ▇ block
+#     - _ underline
+#     - | line
+# Values for `blinking`:
+#     - off: Disable blinking by default
+#     - on: Enable blinking
+cursor:
+  style: underline
+  blinking: off
