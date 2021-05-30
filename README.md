@@ -1,4 +1,4 @@
-# ![](res/logo.jpg) **Lain Code**
+# ![](res/logo-x50.png) **Faye Text**
 
 An open source and free lightweight code editor.
 
@@ -20,16 +20,16 @@ or use shell script to build(RECOMMENDED FOR LINUX).
 $ ./build.sh
 ```
 
-For more information, please go to the [DOCUMENTS](https://alchepic.com/lain-code) page.
+For more information, please go to the [DOCUMENTS](https://alchepic.com/faye-text) page.
 
 ---
 
 ### **How does it look**
 
 <center>
-    <img style="border-radius: 0.3125em;box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" src="res/logo-800x800.png">
+    <img style="border-radius: 0.3125em;box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" src="res/logo-xorigin.png">
     <br>
-    <div style="color: #999;padding: 2px;">Lain Code TUI Edition</div>
+    <div style="color: #999;padding: 2px;">Faye Text TUI Edition</div>
 </center>
 
 ---
@@ -51,4 +51,4 @@ For more information, please go to the [DOCUMENTS](https://alchepic.com/lain-cod
 
 ### **License**
 
-![License](https://img.shields.io/github/license/alchepic/lain-code?color=green&style=flat-square)
+![License](https://img.shields.io/github/license/alchepic/faye-text?color=green&style=flat-square)

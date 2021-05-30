@@ -1,10 +1,10 @@
 #!/usr/bin/bash
-# Name: lain-code build script
+# Name: faye-text build script
 # Version: v0.1.0
 # Author: Siegfried Wu
 # Notice: THIS SCRIPT IS ONLY FOR LINUX.
 
-project_name="lain-code"
+project_name="faye-text"
 system_target="Linux"
 system_type=`uname -o`
 system_bit=`uname -i`
@@ -79,8 +79,8 @@ fi
 
 echo ""
 
-# compiling lain-code
-echo "Start compiling lain-code..."
+# compiling faye-text
+echo "Start compiling faye-text..."
 
 echo ""
 
@@ -92,7 +92,7 @@ echo ""
             read -r -p "Do you want to run this project now? [Y/N] default [N]: " runDebug
             case $runDebug in
                 [yY][eE][sS]|[yY])
-                    echo "  Start lain-code (debug)..."
+                    echo "  Start faye-text (debug)..."
                     cargo run
                     ;;
                 [nN][oO]|[nN]|*)
@@ -107,7 +107,7 @@ echo ""
             read -r -p "Do you want to run this project now? [Y/N] default [N]: " runRelease
             case $runRelease in
                 [yY][eE][sS]|[yY])
-                    echo "  Start lain-code (release)..."
+                    echo "  Start faye-text (release)..."
                     cargo run --release
                     ;;
                 [nN][oO]|[nN]|*)

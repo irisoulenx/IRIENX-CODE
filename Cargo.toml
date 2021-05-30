@@ -1,5 +1,5 @@
 [package]
-name = "lain-code"
+name = "faye-text"
 version = "0.1.0"
 license = "MIT"
 authors = ["Siegfried Wu <howiewoo@outlook.com>"]
@@ -15,7 +15,7 @@ plugins = { path = "./plugins",version = "0.1.0" }
 utils = { path = "./utils",version = "0.1.0" }
 
 [[bin]]
-name="laco"
+name="fate"
 path="./src/main.rs" 
 
 [workspace]
