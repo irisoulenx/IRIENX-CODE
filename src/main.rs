@@ -1,7 +1,10 @@
-use kern::kern;
+use kern::kern_fun::kern_works;
 use lsp::lsp;
+use utils::version;
+
 fn main() {
-    kern::kern_works();
+    kern_works();
     lsp::lsp_works();
+    version::version();
     println!("Hello, world!");
 }

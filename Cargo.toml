@@ -8,6 +8,8 @@ edition = "2018"
 [dependencies]
 kern = { path = "./src/kern",version = "0.1.0" }
 lsp = { path = "./src/lsp",version = "0.1.0" }
+utils = { path = "./src/utils",version = "0.1.0" }
+plug = { path = "./src/plug",version = "0.1.0" }
 
 [[bin]]
 name="fate"
@@ -16,5 +18,7 @@ path="./src/main.rs"
 [workspace]
 members = [
     "src/kern",
-    "src/lsp"
+    "src/lsp",
+    "src/utils",
+    "src/plug"
 ]
