@@ -1,4 +1,4 @@
-# ![](res/icon-c50.png) **Faye Text**
+# **Faye Text**
 
 An open source and free lightweight code editor.
 
@@ -21,16 +21,6 @@ $ ./build.sh
 ```
 
 For more information, please go to the [DOCUMENTS](https://alchepic.com/faye-text) page.
-
----
-
-### **How does it look**
-
-<center>
-    <img style="border-radius: 0.3125em;box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" src="res/icon-origin.png">
-    <br>
-    <div style="color: #999;padding: 2px;">Faye Text TUI Edition</div>
-</center>
 
 ---
 
