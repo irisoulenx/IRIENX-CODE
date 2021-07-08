@@ -1,10 +1,10 @@
 # **Faye Text**
 
-An open source and free lightweight code editor.
+>An open source and free lightweight text editor.
 
 ---
 
-### **How to build**
+## **How to build**
 
 You can build with just one step at root of this project
 
@@ -20,11 +20,11 @@ or use shell script to build(RECOMMENDED FOR LINUX).
 $ ./build.sh
 ```
 
-For more information, please go to the [DOCUMENTS](https://alchepic.com/faye-text) page.
+For more information, please go to the [DOCUMENTS](https://qossp.org/faye-text) page.
 
 ---
 
-### **How to contribute**
+## **How to contribute**
 1. Fork this repo.
 
 2. Modify or add something.
@@ -39,6 +39,6 @@ For more information, please go to the [DOCUMENTS](https://alchepic.com/faye-tex
 
 ---
 
-### **License**
+## **License**
 
-![License](https://img.shields.io/github/license/alchepic/faye-text?color=green&style=flat-square)
+![License](https://img.shields.io/github/license/qossp/faye-text?color=green&style=flat-square)

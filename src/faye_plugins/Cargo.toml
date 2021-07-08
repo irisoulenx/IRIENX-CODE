@@ -1,8 +1,9 @@
 [package]
-name = "kern"
+name = "faye_plugins"
 version = "0.1.0"
-authors = ["Siegfried Wu <howiewoo@outlook.com>"]
+license = "MIT"
 edition = "2018"
+authors = ["Siegfried Wu <siegfried.wu@outlook.at>"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 

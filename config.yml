@@ -1,11 +1,4 @@
-# Name: faye-text configuration
-# Version: 0.1.0
-# Author: Siegfried Wu
-
-# Import external configuration files
-import:
-  - /path/to/theme-faye-light.yml
-  - /path/to/hotkey-faye.yml
+# Configuration for Faye Text
 
 # Font configuration
 font:

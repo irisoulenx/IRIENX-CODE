@@ -1,0 +1,30 @@
+[package]
+name = "faye_init"
+version = "0.1.0"
+license = "MIT"
+edition = "2018"
+authors = ["Siegfried Wu <siegfried.wu@outlook.at>"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies.faye_core]
+path = "../faye_core"
+version = "0.1.0"
+
+[dependencies.faye_lsp]
+path = "../faye_lsp"
+version = "0.1.0"
+
+[dependencies.faye_plugins]
+path = "../faye_plugins"
+version = "0.1.0"
+
+[dependencies.faye_utils]
+path = "../faye_utils"
+version = "0.1.0"
+
+[[bin]]
+name = "fate"
+path = "src/main.rs" 
+
+[dependencies]
