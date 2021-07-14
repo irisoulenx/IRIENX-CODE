@@ -1,0 +1,1 @@
+# Res of faye-text
